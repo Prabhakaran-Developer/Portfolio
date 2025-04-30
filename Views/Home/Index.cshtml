@@ -1,0 +1,303 @@
+﻿@{
+    ViewBag.Title = "Portfolio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/Styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/main.js"></script>
+
+<!-- Intro Section -->
+<div class="intro-section" id="intro">
+    <div class="intro-content">
+        <h2>Welcome to My Portfolio!</h2>
+        <p class="intro-text">Here you will find my work as a .NET developer, showcasing my technical skills, projects, and experience. Enjoy exploring!</p>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</div>
+
+<div class="page-content">
+    <!-- About Me -->
+    <div class="about-container" id="about">
+        <h3><i class="fas fa-user-circle"></i> About Me</h3>
+        <div class="profile-section modern-layout">
+            <div class="swiper-container image-gallery-scroll">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://avatars.githubusercontent.com/u/12345678" alt="Prabhakaran S" class="profile-image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://avatars.githubusercontent.com/u/12345666" alt="Prabhakaran S" class="profile-image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://avatars.githubusercontent.com/u/12345679" alt="Prabhakaran S" class="profile-image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://avatars.githubusercontent.com/u/12345650" alt="Prabhakaran S" class="profile-image" />
+                    </div>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h4 class="profile-name">Prabhakaran S</h4>
+                <p class="profile-title">.NET Developer</p>
+                <p class="profile-description">
+                    A dynamic and results-driven .NET Developer with more than two years of experience. Skilled in backend development, on-premise hosting, and DevOps. Passionate about learning and tech trends.
+                </p>
+                <div class="profile-contacts">
+                    <a href="mailto:prabhakarandotnetdeveloper@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> prabhakarandotnetdeveloper@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/prabhakaran-s-b0011a21a/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Skills -->
+    <div class="section" id="skills">
+        <h3><i class="fas fa-cogs"></i> Technical Skills</h3>
+        <div class="skills-container">
+            <div class="skill-block">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h4>Languages</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> C#</li>
+                    <li><i class="fas fa-check-circle"></i> JavaScript</li>
+                    <li><i class="fas fa-check-circle"></i> Python</li>
+                    <li><i class="fas fa-check-circle"></i> TypeScript</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                <h4>Frameworks</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> .NET 8, ASP.NET Core, MVC</li>
+                    <li><i class="fas fa-check-circle"></i> Microservices, EF, ADO.NET</li>
+                    <li><i class="fas fa-check-circle"></i> Django, Flask</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                <h4>Frontend</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> HTML, CSS</li>
+                    <li><i class="fas fa-check-circle"></i> Bootstrap</li>
+                    <li><i class="fas fa-check-circle"></i> Angular</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h4>Databases</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> SQL Server</li>
+                    <li><i class="fas fa-check-circle"></i> MySQL</li>
+                    <li><i class="fas fa-check-circle"></i> PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <h4>DevOps & Cloud</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Azure</li>
+                    <li><i class="fas fa-check-circle"></i> Docker</li>
+                    <li><i class="fas fa-check-circle"></i> On-Premise Server</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                <h4>Tools</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Git, GitHub</li>
+                    <li><i class="fas fa-check-circle"></i> Swagger, Postman</li>
+                    <li><i class="fas fa-check-circle"></i> IIS, Visual Studio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section" id="experience">
+        <h3><i class="fas fa-briefcase"></i> Experience</h3>
+        <div class="timeline">
+            <div class="experience-block">
+                <div class="experience-date">Mar 2025 - Present</div>
+                <div class="experience-content">
+                    <h4>Software Developer | Aetram InfoTech</h4>
+                    <ul>
+                        <li>Fullstack MVC.NET Core development</li>
+                        <li>Optimized DB/API performance by 30%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-block">
+                <div class="experience-date">Feb 2023 - Feb 2025</div>
+                <div class="experience-content">
+                    <h4>Jr. .NET Developer | Constient Global</h4>
+                    <ul>
+                        <li>SBI Demat & Mutual Fund systems</li>
+                        <li>Worked on hosting, performance, RBAC</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-block">
+                <div class="experience-date">Nov 2021 - Feb 2023</div>
+                <div class="experience-content">
+                    <h4>Technical Trainer | Networkz Systems</h4>
+                    <ul>
+                        <li>Trained students in ASP.NET, SQL, APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+        <h3><i class="fas fa-tasks"></i> Projects</h3>
+        <div class="projects-grid">
+            <div class="project-item">
+                <div class="project-header">
+                    <img src="https://opendemataccount.sbisecurities.in/SBIDIYV1/assets/images/SBINEW/LogoWeb.webp" alt="SBI Demat Project" class="project-img" style="border-radius: 70%;" />
+                    <h4>SBI Demat Account Opening & Account verification Backoffice</h4>
+                </div>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i> ASP.NET, SQL Server, API integration</li>
+                    <li><i class="fas fa-caret-right"></i> Automated verification & 3rd-party APIs</li>
+                    <li><i class="fas fa-caret-right"></i> Implement security like JWT Aurthized Token in MiddleWare</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-tag">ASP.NET</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">JWT</span>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-header">
+                    <img src="https://www.absolutebroking.com/assets/images/Group.png" alt="Mutual Fund System" class="project-img" style="border-radius: 75%;" />
+                    <h4>Mutual Fund Opening System For Absolute Broking</h4>
+                </div>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i> JWT, Role-Based Access, Redis caching</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">RBAC</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <img src="~/Images/A1.jpg" alt="Mutual Fund System" class="project-img" style="border-radius: 50%;" />
+                    <h4>Aetram Trades MU</h4>
+                </div>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i> JWT, ENC & DESC with dynamic JWT token as key & IV, Redis caching</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">RBAC</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <img src="~/Images/A1.jpg" alt="Aetram Trades" class="project-img" style="border-radius: 50%;" />
+                    <h4>Aetram Trades IND</h4>
+                </div>
+                <ul>
+                    <li><i class="fas fa-caret-right"></i> JWT, ENC & DESC with dynamic JWT token as key & IV, Redis caching</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">RBAC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section" id="education">
+        <h3><i class="fas fa-graduation-cap"></i> Education & Certifications</h3>
+        <div class="education-container">
+            <div class="education-block">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-content">
+                    <h4>B.Sc. Computer Science</h4>
+                    <p class="education-institution">N.M.S.S.V.N College, Madurai</p>
+                    <p class="education-duration">Kamarajar University, 2019</p>
+                </div>
+            </div>
+            <div class="certifications">
+                <h4 class="certifications-title">Certifications</h4>
+                <div class="certification-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>.NET Core & Web API</span>
+                </div>
+                <div class="certification-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Python Full Stack</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/stopDebug.js"></script>
+<script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const sectionToRedirect = sessionStorage.getItem("redirectToSection");
+        if (sectionToRedirect) {
+            const targetSection = document.getElementById(sectionToRedirect);
+            if (targetSection) {
+                const topOffset = 80;
+                const elementPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - topOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
+                sessionStorage.removeItem("redirectToSection");
+            }
+        }
+    });
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,                  // Infinite loop of images
+      autoplay: {
+        delay: 3500,                // Delay between each slide (in ms)
+        disableOnInteraction: false // Keeps autoplay going even when user interacts with the slider
+      },
+      spaceBetween: 20,             // Space between slides
+      slidesPerView: 1,             // Only 1 slide visible at a time
+      centeredSlides: true,         // Center the active slide
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+
+    function Contact(){
+          window.location.href = '/Contact/Index';
+    };
+
+</script>

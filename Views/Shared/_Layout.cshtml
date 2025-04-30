@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Styles -->
+    <link href="~/css/Styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="~/js/stopDebug.js"></script>
+    <script src="~/js/main.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="top-nav-wrapper fancy-header">
+        <nav class="top-nav-container glass-nav">
+            <div class="brand-logo">
+                 Prabhakaran S
+            </div>
+            <div class="section-nav">
+                <button class="section-btn" data-target="about"><i class="fas fa-user"></i> About</button>
+                <button class="section-btn" data-target="skills"><i class="fas fa-laptop-code"></i> Skills</button>
+                <button class="section-btn" data-target="experience"><i class="fas fa-briefcase"></i> Experience</button>
+                <button class="section-btn" data-target="projects"><i class="fas fa-project-diagram"></i> Projects</button>
+                <button class="section-btn" data-target="education"><i class="fas fa-graduation-cap"></i> Education</button>
+                <button class="section-btn" data-target="Contact Me" onclick="Contact()"><i class="fas fa-envelope"></i> Contact Me</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container fancy-container">
+        @RenderBody()
+    </main>
+</body>
+</html>
