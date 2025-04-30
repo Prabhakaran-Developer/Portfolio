@@ -128,4 +128,18 @@
             }
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Show the navigation with mobile-specific styling
+        const nav = document.querySelector('.glass-nav');
+        if (nav) {
+            nav.classList.add('show-on-mobile');
+        }
+
+        // Hide the mobile contact button
+        const mobileContactBtn = document.querySelector('.mobile-only-contact');
+        if (mobileContactBtn) {
+            mobileContactBtn.style.display = 'none';
+        }
+    });
 </script>

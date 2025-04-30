@@ -3,6 +3,10 @@
 .mobile-only-contact {
     display: none;
 }
+.mobile-only-Home {
+    display: none;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     background-color: #0a0a0a;
@@ -102,7 +106,7 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(0, 255, 136, 0.1);
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.05);
-}
+}.profile-info h4.profile-name
 
 /* ========== ABOUT SECTION ========== */
 .profile-section.modern-layout {
@@ -657,6 +661,25 @@ body {
     }
 
         .mobile-only-contact i {
+            margin-right: 8px;
+        }
+
+    .mobile-only-Home {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background-color: #00ff88;
+        color: #000;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 30px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+        .mobile-only-Home i {
             margin-right: 8px;
         }
     /* GENERAL FIXES */

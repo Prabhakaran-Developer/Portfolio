@@ -348,6 +348,11 @@
                 sessionStorage.removeItem("redirectToSection");
             }
         }
+
+         const mobileContactBtn = document.querySelector('.mobile-only-Home');
+        if (mobileContactBtn) {
+            mobileContactBtn.style.display = 'none';
+        }
     });
     var swiper = new Swiper('.swiper-container', {
       loop: true,                  // Infinite loop of images
