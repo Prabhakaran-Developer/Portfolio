@@ -106,7 +106,7 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(0, 255, 136, 0.1);
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.05);
-}.profile-info h4.profile-name
+}
 
 /* ========== ABOUT SECTION ========== */
 .profile-section.modern-layout {
@@ -819,11 +819,19 @@ body {
                 color: #00ff88;
             }
 
-    /* Remove swiper container if still present */
-    .swiper-container,
-    .swiper-wrapper,
+    .swiper-container {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 20px;
+    }
+
+    .swiper-wrapper {
+        display: flex !important;
+    }
+
     .swiper-slide {
-        display: none !important;
+        display: flex !important;
+        justify-content: center;
     }
 
     /* SKILLS */
