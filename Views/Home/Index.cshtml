@@ -10,7 +10,7 @@
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="~/js/main.js"></script>
-<script src="~/js/stopDebug.js"></script>
+ <script src="~/js/stopDebug.js"></script>
 <!-- Intro Section -->
 <div class="intro-section" id="intro">
     <div class="intro-content">
@@ -324,20 +324,36 @@
                     <i class="fas fa-certificate"></i>
                     <span>Python Full Stack</span>
                 </div>
+                <div class="certifications">
+                    <div class="certificate-gallery">
+                        <a href="~/Images/SqLI.png" data-lightbox="certs" data-title="SQL Basic Certificate">
+                            <img src="~/Images/tambSqLI.png" alt="SQL Certificate" class="cert-thumb" />
+                        </a>
+
+                        <a href="~/Images/ProblemS.png" data-lightbox="certs" data-title=".NET Core Certificate">
+                            <img src="~/Images/TambProblemS.png" alt=".NET Certificate" class="cert-thumb" />
+                        </a>
+
+                        <!-- Add more certificates similarly -->
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 <script>
 
-        document.addEventListener("DOMContentLoaded", () => {
+       document.addEventListener("DOMContentLoaded", () => {
         const sectionToRedirect = sessionStorage.getItem("redirectToSection");
         if (sectionToRedirect) {
             const targetSection = document.getElementById(sectionToRedirect);
             if (targetSection) {
                 const topOffset = 80;
-                const elementPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+                const elementPosition = targetSection.getBoundingClientRect().top + window.scrollY; 
                 const offsetPosition = elementPosition - topOffset;
 
                 window.scrollTo({
@@ -349,11 +365,12 @@
             }
         }
 
-         const mobileContactBtn = document.querySelector('.mobile-only-Home');
+        const mobileContactBtn = document.querySelector('.mobile-only-Home');
         if (mobileContactBtn) {
             mobileContactBtn.style.display = 'none';
         }
     });
+
     var swiper = new Swiper('.swiper-container', {
       loop: true,                  // Infinite loop of images
       autoplay: {

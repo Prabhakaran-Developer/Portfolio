@@ -979,7 +979,67 @@ body {
     .scroll-down {
         font-size: 1.5rem;
     }
+    .certificate-gallery {
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .cert-thumb {
+        max-width: 90vw;
+    }
 }
+.certificate-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.cert-thumb {
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+    .cert-thumb:hover {
+        transform: scale(1.05);
+    }
+
+/* Modal Styles */
+.cert-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.cert-modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+.cert-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 
 
