@@ -15,7 +15,7 @@ namespace MyPortfolio.Controllers
             {
                 var fromAddress = new MailAddress("sprabhakaran311@gmail.com", "Portfolio contacts");
                 var toAddress = new MailAddress("prabhakarandotnetdeveloper@gmail.com");
-                const string fromPassword = "rkyt lsiu fxoa usgh";
+                const string fromPassword = "eafk rgrd rcvn tifz";
                 string subject = "New Contact Submission Portfolio";
 
                 string body = $@"
