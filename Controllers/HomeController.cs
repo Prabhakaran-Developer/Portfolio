@@ -62,8 +62,7 @@ namespace MyPortfolio.Controllers
             {
                 Experiences = new List<Experience>
                 {
-                    new Experience
-                    {
+                    new() {
                         DateRange = "Mar 2025 - Present",
                         Company = "Aetram InfoTech",
                         Position = "Software Developer",
@@ -73,7 +72,7 @@ namespace MyPortfolio.Controllers
                             "Secured the site using JWT tokens for authentication and authorization."
                         }
                     },
-                    new Experience
+                    new ()
                     {
                         DateRange = "Feb 2023 - Feb 2025",
                         Company = "Constient Global",
@@ -85,7 +84,7 @@ namespace MyPortfolio.Controllers
                             "Secured the site using JWT tokens for authentication and authorization."
                         }
                     },
-                    new Experience
+                    new ()
                     {
                         DateRange = "Nov 2021 - Feb 2023",
                         Company = "Networkz Systems",
@@ -106,7 +105,7 @@ namespace MyPortfolio.Controllers
             {
                 Projects = new List<Project>
                 {
-                    new Project
+                    new ()
                     {
                         Title = "SBI Demat Account Opening & Backoffice Verification System",
                         ImageUrl = "https://opendemataccount.sbisecurities.in/SBIDIYV1/assets/images/SBINEW/LogoWeb.webp",
@@ -122,7 +121,7 @@ namespace MyPortfolio.Controllers
                         },
                         Technologies = new List<string> { "ASP.NET", "SQL Server", "JWT", "IIS", "ADO.Net", "Task Scheduler Service" }
                     },
-                    new Project
+                    new ()
                     {
                         Title = "Mutual Fund Account Opening – Absolute Broking",
                         ImageUrl = "https://www.absolutebroking.com/assets/images/Group.png",
@@ -137,7 +136,7 @@ namespace MyPortfolio.Controllers
                         },
                         Technologies = new List<string> { ".NET Core", "MySQL", "Redis", "RBAC", "JWT", "HTML", "CSS", "JQuery", "Javascript", "Bootstrap" }
                     },
-                    new Project
+                    new ()
                     {
                         Title = "Aetram Trades MU",
                         ImageUrl = "/Images/A1.jpg",
