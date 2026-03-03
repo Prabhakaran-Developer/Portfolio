@@ -32,7 +32,8 @@ namespace MyPortfolio.Controllers
                 Description = "Versatile .NET Developer with over 2 years of hands-on experience crafting robust backend systems, managing on-premise deployments, and implementing DevOps pipelines. Committed to writing clean, maintainable code and continuously evolving with the latest in software engineering.",
                 Email = "prabhakarandotnetdeveloper@gmail.com",
                 LinkedInUrl = "https://www.linkedin.com/in/prabhakaran-s-b0011a21a/",
-                ProfileImagePath = "/Images/Mine.jpg"
+                ProfileImagePath = "/Images/Mine.jpg",
+                ProfileImagePath1 = "/Images/Mine2.jpg",
             };
         }
 

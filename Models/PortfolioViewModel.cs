@@ -20,6 +20,8 @@
         public string? Email { get; set; }
         public string? LinkedInUrl { get; set; }
         public string? ProfileImagePath { get; set; }
+        public string? ProfileImagePath1 { get; set; }
+
     }
 
     public class SkillsSection
