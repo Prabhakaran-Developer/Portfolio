@@ -43,15 +43,15 @@ namespace MyPortfolio.Controllers
             {
                 SkillCategories = new List<SkillCategory>
                 {
-                    new SkillCategory { Name = "Languages", IconClass = "fas fa-code", Skills = new List<string> { "C#", "JavaScript", "TypeScript", "Python", "SQL" }},
-                    new SkillCategory { Name = "Backend & Frameworks", IconClass = "fas fa-cogs", Skills = new List<string> { "ASP.NET Core, MVC", ".NET 8, Web API", "Entity Framework, ADO.NET", "Django, Flask", "Microservices Architecture" }},
-                    new SkillCategory { Name = "Frontend", IconClass = "fas fa-paint-brush", Skills = new List<string> { "HTML5, CSS3, Sass", "Bootstrap, Tailwind CSS", "Angular", "Razor Pages" }},
-                    new SkillCategory { Name = "Databases", IconClass = "fas fa-database", Skills = new List<string> { "SQL Server", "MySQL, PostgreSQL", "SQLite", "Redis (basics)" }},
-                    new SkillCategory { Name = "DevOps & Cloud", IconClass = "fas fa-cloud", Skills = new List<string> { "Azure (App Service, Functions)", "Docker, Docker Compose", "CI/CD (GitHub Actions, Azure DevOps)", "On-Premise Hosting" }},
-                    new SkillCategory { Name = "Logging & Monitoring", IconClass = "fas fa-clipboard-list", Skills = new List<string> { "Serilog", "NLog", "Microsoft.Extensions.Logging", "Seq", "Application Insights" }},
-                    new SkillCategory { Name = "Tools & Utilities", IconClass = "fas fa-tools", Skills = new List<string> { "Git, GitHub, GitLab", "Visual Studio, VS Code", "Swagger, Postman", "IIS, Kestrel, Nginx (basic)" }},
-                    new SkillCategory { Name = "Security & Authentication", IconClass = "fas fa-shield-alt", Skills = new List<string> { "JWT Authentication", "AES Encryption (Static & Dynamic Keys)", "Role-Based Authorization", "HTTPS, CORS Policies" }},
-                    new SkillCategory { Name = "Soft Skills & Communication", IconClass = "fas fa-comments", Skills = new List<string> { "Team Collaboration", "Requirement Analysis", "Technical Documentation", "Client Communication" }}
+                    new () { Name = "Languages", IconClass = "fas fa-code", Skills = new List<string> { "C#", "JavaScript", "TypeScript", "Python", "SQL" }},
+                    new () { Name = "Backend & Frameworks", IconClass = "fas fa-cogs", Skills = new List<string> { "ASP.NET Core, MVC", ".NET 8, Web API", "Entity Framework, ADO.NET", "Django, Flask", "Microservices Architecture" }},
+                    new () { Name = "Frontend", IconClass = "fas fa-paint-brush", Skills = new List<string> { "HTML5, CSS3, Sass", "Bootstrap, Tailwind CSS", "Angular", "Razor Pages" }},
+                    new () { Name = "Databases", IconClass = "fas fa-database", Skills = new List<string> { "SQL Server", "MySQL, PostgreSQL", "SQLite", "Redis (basics)" }},
+                    new () { Name = "DevOps & Cloud", IconClass = "fas fa-cloud", Skills = new List<string> { "Azure (App Service, Functions)", "Docker, Docker Compose", "CI/CD (GitHub Actions, Azure DevOps)", "On-Premise Hosting" }},
+                    new () { Name = "Logging & Monitoring", IconClass = "fas fa-clipboard-list", Skills = new List<string> { "Serilog", "NLog", "Microsoft.Extensions.Logging", "Seq", "Application Insights" }},
+                    new () { Name = "Tools & Utilities", IconClass = "fas fa-tools", Skills = new List<string> { "Git, GitHub, GitLab", "Visual Studio, VS Code", "Swagger, Postman", "IIS, Kestrel, Nginx (basic)" }},
+                    new () { Name = "Security & Authentication", IconClass = "fas fa-shield-alt", Skills = new List<string> { "JWT Authentication", "AES Encryption (Static & Dynamic Keys)", "Role-Based Authorization", "HTTPS, CORS Policies" }},
+                    new () { Name = "Soft Skills & Communication", IconClass = "fas fa-comments", Skills = new List<string> { "Team Collaboration", "Requirement Analysis", "Technical Documentation", "Client Communication" }}
                 }
             };
         }
@@ -159,7 +159,7 @@ namespace MyPortfolio.Controllers
             {
                 Degrees = new List<Education>
                 {
-                    new Education
+                    new ()
                     {
                         Degree = "B.Sc. Computer Science",
                         Institution = "N.M.S.S.V.N College, Madurai",
@@ -175,14 +175,14 @@ namespace MyPortfolio.Controllers
             {
                 Certificates = new List<Certificate>
                 {
-                    new Certificate
+                    new ()
                     {
                         Name = ".NET Core & Web API",
                         ImagePath = "/Images/tambSqLI.png",
                         FullImagePath = "/Images/SqLI.png",
                         Description = "SQL Basic Certificate"
                     },
-                    new Certificate
+                    new ()
                     {
                         Name = "Python Full Stack",
                         ImagePath = "/Images/TambProblemS.png",
@@ -194,7 +194,7 @@ namespace MyPortfolio.Controllers
         }
 
         [HttpPost]
-        public  ActionResult Contact(string name, string email, string message)
+        public  ActionResult Contact()
         {
             
             TempData["Message"] = "Thank you for contacting me!";
